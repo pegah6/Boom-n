@@ -15,7 +15,14 @@ namespace BoomAspCore.Models
 
           }
         public virtual DbSet<Category> Categorys { get; set; }
-        public DbSet<BoomAspCore.Models.Place> Place { get; set; }
-        
+
+
+        public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<Product> Order { get; set; }
+        public virtual DbSet<Product> OrderDetail { get; set; }
+        public virtual DbSet<Product> Comment { get; set; }
+
+
+
     }
 }
