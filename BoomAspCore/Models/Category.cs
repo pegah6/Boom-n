@@ -11,7 +11,7 @@ namespace BoomAspCore.Models
     {
         public Category()
         {
-            Places = new HashSet<Place>();
+           
            // Place = new HashSet<Place>();
         }
 
@@ -19,6 +19,9 @@ namespace BoomAspCore.Models
         public string Name { get; set; }
 
         // Category & Products 
-        public  virtual ICollection<Place> Places { get; set; }
+        
+
+        // Category & Member 
+       // public virtual ICollection<Member> Members { get; set; }
     }
 }
